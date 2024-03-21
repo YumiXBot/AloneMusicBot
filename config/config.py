@@ -21,7 +21,7 @@ API_ID = int(getenv("API_ID", "23531711"))
 API_HASH = getenv("API_HASH", "65780e80712347f6b824a0666f040d79")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5963562690:AAGwIoleDCYsC3EtamtsMBLcY0Jvo63U68Y")
+BOT_TOKEN = getenv("BOT_TOKEN", None)
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://hny:zara@cluster0.lfe5o.mongodb.net/?retryWrites=true&w=majority")
@@ -33,7 +33,7 @@ DURATION_LIMIT_MIN = int(
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1000")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -72,7 +72,7 @@ SUPPORT_GROUP = getenv(
 )  # Example:- https://t.me/AlonesHeaven
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "Flash")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -91,7 +91,7 @@ AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
 
 # Set it true if you want your bot to be private only [You'll need to allow CHAT_ID via /authorise command then only your bot will play music in that chat.]
-PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
+PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", "True")
 
 # Time sleep duration For Youtube Downloader
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
@@ -138,9 +138,9 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @AloneStringBot
-STRING1 = getenv("STRING_SESSION", "BQAYRIV3qXq3m1FAxBMdztIUOHwwDExkepJ-qFAAyz0lbUs48jpsmSaGBepzasm4Z6tfl80Ha0jE1E_dhFqWweeZXUxTAX5AInJGHXOM-8Xl_zXl8mlTNH3Wib-4EzTvjTl-sYkge31FqdIRhilty7w76NTxz0ytIM6-0X3DYY4BMwo9bENx4nr_rLHUidlJDRfPxq8Txigzao1lJBtpc1Vng7HU0iqWkYmNe9cNjHLAMXJGsokmAWxLVKgcVhxXLZn5W6Ash1QFVSgrYAu8ZhdbXhdMlbfeL7JqfegLYQk8gQQ1h0xRsj0aagT2NyoVvnpjuXmtlperbwqO_5tNRSFlasK9dAA")
-STRING2 = getenv("STRING_SESSION2", "BQDCOPgeUReF0HwCz6fMErWe1fi4sacDU80Lmz3dq6tr3-EX7WiEZLl4LuYxSeoji_UrPnMJ7p7qLHqhTr7cG_McwY3khAmLtCbbalEQ8dYLh3uGNg7ha9iIyyFJihHfvVJuj7Yo023LbLVx0Y03hQ7Z2LeDRTiHcy5I0eCqZJnpKrqyK8XeHmJHeL93ybIEvjqxdILpPYqdTIeyAH6WkTnNobxTV0PQ9A0RrDGgPPtgVYibBp1onA5CSj3BSH-SDtUDhmy1TUQmxnds7EIuGpALrO0jR7dhRIswamr9znzBRuiaXZJ-b9Gkjt0R7sZziQHZdSHpbY7ZdZnaAAx1eMxTAAAAAW8fDwQA")
-STRING3 = getenv("STRING_SESSION3", "BQDE7lb5HBwKXmn_ZsJDkYw-FmLKyiM6YPK5jdpjCOLYwhjy0NliV37D5CuL1UyeOF8Xu66twwCd8VkbqpsPt78xqsKJVApQTgwbFautRSmPURuZPRlCgQZg56dsF4mqIxj6uKBnaCsReGNmXJm3gl6o_1rkkzbH2-LjAn2u1HWdU8s8RyGSZCwkGxXufIBSmlQnKNu_isZEWTigpiNwCPYETz7kaufrb5Q1BxXqqFcAwuwmX3MTPetTi6XTRl7buPyVvIghH0dh3Xit0U6aFVhmWdFniU90kKWVUflUuRGgQdUhMaQ11vofCUbaHAu9NnrbWWQ2qQCKxlNyl7o-Lt2vAAAAAVsVsXEA")
+STRING1 = getenv("STRING_SESSION", None)
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
